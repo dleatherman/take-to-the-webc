@@ -1,0 +1,10 @@
+<h1>Components don't need a root element, y'all.</h1>
+
+<style webc:scoped>
+  :host h1 {
+    background-color: #000;
+    color: white;
+    display: block;
+    padding: 1rem;
+  }
+</style>

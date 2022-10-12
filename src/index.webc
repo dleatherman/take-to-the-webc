@@ -1,0 +1,6 @@
+---
+layout: "layouts/base.webc"
+---
+
+<h1>WebC is HTML</h1>
+<my-component></my-component>
