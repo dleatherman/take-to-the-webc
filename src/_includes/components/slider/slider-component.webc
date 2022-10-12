@@ -1,0 +1,44 @@
+<ul id="Slider-Slider"
+  class="grid grid--gap-mobile grid--gap-desktop grid--1-col-tablet-down grid--3-col-desktop slider slider--mobile slider--desktop"
+  role="list">
+  <li id="Slide-1" class="grid-item slider-slide">1</li>
+  <li id="Slide-2" class="grid-item slider-slide">2</li>
+  <li id="Slide-3" class="grid-item slider-slide">3</li>
+  <li id="Slide-4" class="grid-item slider-slide">4</li>
+  <li id="Slide-5" class="grid-item slider-slide">5</li>
+  <li id="Slide-6" class="grid-item slider-slide">6</li>
+</ul>
+
+<div class="slider-buttons no-js-hidden">
+  <button type="button" class="slider-button slider-button--prev" name="previous"
+    aria-label="Previous Slide">&lsaquo;</button>
+  <div class="slider-counter caption">
+    <span class="slider-counter--current">1</span>
+    <span aria-hidden="true"> / </span>
+    <span class="visually-hidden">of</span>
+    <span class="slider-counter--total">6</span>
+  </div>
+  <button type="button" class="slider-button slider-button--next" name="next" aria-label="Next slide">&rsaquo;</button>
+</div>
+
+<style webc:scoped>
+  :host>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  :host .slider-slide {
+    background: #000;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  :host .slider-button {
+    font-size: 1rem;
+  }
+</style>
+
+<link rel="stylesheet" href="slider-component.css" webc:bucket="defer">
+<script src="slider-component.js" webc:bucket="defer"></script>

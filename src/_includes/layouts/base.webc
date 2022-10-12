@@ -10,6 +10,12 @@
   <script @html="this.getJS(this.page.url)"></script>
 </head>
 
-<body @html="this.content"></body>
+<body>
+
+  <template webc:nokeep @html="this.content"></template>
+  <!-- `defer` bucket -->
+  <style @html="this.getCSS(this.page.url, 'defer')"></style>
+  <script @html="this.getJS(this.page.url, 'defer')"></script>
+</body>
 
 </html>
